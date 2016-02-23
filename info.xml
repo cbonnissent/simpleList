@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<module xmlns="urn:dynacase:webinst:module/1.0" name="@moduleName@" release="@release@" version="@version@">
+    <description>SIMPLE_LIST</description>
+
+    <requires>
+        <module comp="ge" name="dynacase-core" version="3.2"/>
+        <module name="dynacase-document-uis"/>
+    </requires>
+
+    <post-install>
+        <process command="programs/record_application SIMPLE_LIST"/>
+        <process command="programs/update_catalog"/>
+    </post-install>
+    <post-upgrade>
+        <process command="programs/pre_migration SIMPLE_LIST"/>
+        <process command="programs/record_application SIMPLE_LIST"/>
+        <process command="programs/post_migration SIMPLE_LIST"/>
+        <process command="programs/update_catalog"/>
+    </post-upgrade>
+</module>

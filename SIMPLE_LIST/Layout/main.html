@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="[DYNACASE_FAVICO]"/>
+    <link rel="shortcut icon" href="[DYNACASE_FAVICO]"/>
+    <title>[TEXT:SIMPLE_LIST:Title]</title>
+    <link rel="stylesheet" href="css/dcp/document/bootstrap.css?ws=[WS]">
+    <link rel="stylesheet" href="SIMPLE_LIST/Layout/main.css?ws=[WS]">
+</head>
+<body>
+<div class="container-fluid mainWrapper">
+    <div class="listPart">
+        <div class="list-group listPart__elements">
+
+        </div>
+    </div>
+    <div class="contentPart">
+        <div class="documentWrapper" style="display: none;"></div>
+    </div>
+</div>
+<div class="notConfigurated" style="display: none;">
+    <div class="alert alert-info" role="alert">
+        [TEXT:SIMPLE_LIST:You need to configure the search reference]
+    </div>
+</div>
+<script type="text/javascript">
+    window.conf = window.conf || {};
+    window.conf.searchName = "[search_name]";
+</script>
+<script type="text/javascript" src="lib/jquery/ddui/jquery.min.js?ws=[WS]"></script>
+<script type="text/javascript" src="lib/underscore/underscore.js?ws=[WS]"></script>
+<script type="text/javascript" src="DOCUMENT/IHM/widgets/widget.js?ws=[WS]"></script>
+<script type="text/javascript" src="DOCUMENT/IHM/document.js?ws=[WS]"></script>
+<script type="text/javascript" src="SIMPLE_LIST/Layout/main.js?ws=[WS]"></script>
+</body>
+</html>
